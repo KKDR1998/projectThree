@@ -145,11 +145,11 @@
             </objects>
             <point key="canvasLocation" x="-389" y="249"/>
         </scene>
-        <!--Eats-->
+        <!--Maps-->
         <scene sceneID="EsM-0G-0Ne">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fxh-ZA-v1L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Eats" id="Ved-4O-RjB"/>
+                    <tabBarItem key="tabBarItem" title="Maps" id="Ved-4O-RjB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jkt-Ru-PKj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -164,11 +164,11 @@
             </objects>
             <point key="canvasLocation" x="562.39999999999998" y="-84.107946026986511"/>
         </scene>
-        <!--Maps-->
+        <!--Calculator-->
         <scene sceneID="AYH-Cl-22a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vxe-ih-Cdv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Maps" id="m1o-21-DEO"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" id="m1o-21-DEO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tRE-4F-IkW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

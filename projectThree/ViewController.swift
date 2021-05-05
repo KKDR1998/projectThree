@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     //let initialLocation = CLLocation(latitude: 21.356522325850733, longitude: -158.05621900337144)
     
-    let regionRadius: CLLocationDistance = 1810
+    let regionRadius: CLLocationDistance = 1850
     
     override func viewDidLoad() {
         super.viewDidLoad()
