@@ -11,8 +11,8 @@ import MapKit
 import CoreLocation
 
 class ViewController: UIViewController {
-//
-    
+
+    @IBOutlet weak var projMap: MKMapView!
     
 //Chef's Lau 21.335039 , -158.088287
 //Aloha Salads 21.331251 , -158.091599
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 //Koa Pancake House 21.338045 , -158.080673
 
     //the inital locaiton of the map
-    let initialLocation = CLLocation(latitude: 21.356522325850733, longitude: -158.05621900337144)
+    let initialLocation = CLLocation(latitude: 21.332323, longitude: -158.082962)
     
     //let initialLocation = CLLocation(latitude: 21.356522325850733, longitude: -158.05621900337144)
     
@@ -29,15 +29,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        centerMapOnLocation(location: initialLocation)
+        
+        let restaurantOne = restaurantAnnotation (title: "Chef's Lau", type: "Hawaiian", coordinate: CLLocationCoordinate2D (latitude: 21.335039, longitude: -158.088287))
+        
+        projMap.addAnnotation(restaurantOne)
+
     }
     //centers the map on something specific
     func centerMapOnLocation (location: CLLocation)
     {
         
-        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+       let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         
-        //mapView.setRegion(coordinateRegion, animated: true)
+        projMap.setRegion(coordinateRegion, animated: true)
         
     }
 

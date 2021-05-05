@@ -12,6 +12,8 @@
 		CE46201D2628D2F800412D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE46201B2628D2F800412D00 /* Main.storyboard */; };
 		CE46201F2628D2F900412D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE46201E2628D2F900412D00 /* Assets.xcassets */; };
 		CE4620222628D2F900412D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4620202628D2F900412D00 /* LaunchScreen.storyboard */; };
+		CEE1D38D2642B79C00FFD04C /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1D38C2642B79C00FFD04C /* secondViewController.swift */; };
+		CEE1D38F2642B93500FFD04C /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1D38E2642B93500FFD04C /* Restaurants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CE46201E2628D2F900412D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4620212628D2F900412D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4620232628D2F900412D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE1D38C2642B79C00FFD04C /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		CEE1D38E2642B93500FFD04C /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				CE4620172628D2F700412D00 /* AppDelegate.swift */,
 				CE4620192628D2F800412D00 /* ViewController.swift */,
 				CE46201B2628D2F800412D00 /* Main.storyboard */,
+				CEE1D38E2642B93500FFD04C /* Restaurants.swift */,
+				CEE1D38C2642B79C00FFD04C /* secondViewController.swift */,
 				CE46201E2628D2F900412D00 /* Assets.xcassets */,
 				CE4620202628D2F900412D00 /* LaunchScreen.storyboard */,
 				CE4620232628D2F900412D00 /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE1D38F2642B93500FFD04C /* Restaurants.swift in Sources */,
 				CE46201A2628D2F800412D00 /* ViewController.swift in Sources */,
+				CEE1D38D2642B79C00FFD04C /* secondViewController.swift in Sources */,
 				CE4620182628D2F700412D00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
