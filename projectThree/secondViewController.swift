@@ -8,23 +8,42 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class secondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var myListArray = ["Chef's Lau", "Aloha Salads", "Brick Oven Pizza", "My Cafe", "Koa Pancake"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return myListArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+   
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
+        let text = myListArray[indexPath.row]
+        cell?.textLabel?.text = text
+        return cell!
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        
+        
+        
+        
+        
+        
+        
+        super.viewDidLoad()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        self.navigationItem.title = "Tip Calculator";
+
     }
-    */
+    
 
+    
 }

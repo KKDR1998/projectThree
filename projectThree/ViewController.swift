@@ -10,7 +10,9 @@ import UIKit
 import MapKit
 import CoreLocation
 
+
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var projMap: MKMapView!
     
@@ -25,16 +27,39 @@ class ViewController: UIViewController {
     
     //let initialLocation = CLLocation(latitude: 21.356522325850733, longitude: -158.05621900337144)
     
-    let regionRadius: CLLocationDistance = 10000
+    let regionRadius: CLLocationDistance = 1810
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Eatery Locations";
+
         centerMapOnLocation(location: initialLocation)
         
+        //first restaurant
         let restaurantOne = restaurantAnnotation (title: "Chef's Lau", type: "Hawaiian", coordinate: CLLocationCoordinate2D (latitude: 21.335039, longitude: -158.088287))
         
         projMap.addAnnotation(restaurantOne)
+        
+        //second restaurant
+        let restaurantTwo = restaurantAnnotation (title: "Aloha Salads", type: "Hawaiian", coordinate: CLLocationCoordinate2D (latitude: 21.331251, longitude: -158.091599))
+        
+        projMap.addAnnotation(restaurantTwo)
+        
+        //third restaurant
+        let restaurantThree = restaurantAnnotation (title: "Brick Oven Pizza", type: "Itallian", coordinate: CLLocationCoordinate2D (latitude: 21.332531, longitude: -158.082153))
+        
+        projMap.addAnnotation(restaurantThree)
+        
+        //fourth restaurant
+        let restaurantFour = restaurantAnnotation (title: "My Cafe", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.337778, longitude: -158.079742))
+        
+        projMap.addAnnotation(restaurantFour)
+        
+        //fifth restaurant
+        let restaurantFive = restaurantAnnotation (title: "Koa Pancake House", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.338045, longitude: -158.080673))
+        
+        projMap.addAnnotation(restaurantFive)
 
     }
     //centers the map on something specific
