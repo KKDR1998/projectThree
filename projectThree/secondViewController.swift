@@ -78,22 +78,23 @@ class secondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         switch
             segConTipCal.selectedSegmentIndex
         {
-        
+
+            
         case 0:
         //First tip calculation
         let tipAmount = (billAmount * 0.15)
         self.tipAmountLabel.text = "$\(tipAmount)"
         tipLabelPercentChange.text = "Your Tip(15%):"
-
         
-        
+        self.totalAmountLabel.text = String (format: "$%.02f", billAmount + tipAmount)
+            
         case 1:
         //Second tip calculation
         let tipAmount = (billAmount * 0.18)
         self.tipAmountLabel.text = "$\(tipAmount)"
         tipLabelPercentChange.text = "Your Tip(18%):"
 
-        
+        self.totalAmountLabel.text = String (format: "$%.02f", billAmount + tipAmount)
         
         case 2:
         //Third tip calculation
@@ -105,18 +106,20 @@ class secondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         //Bill+Tip total
-        let total = (billAmount + tipAmount)
+        //let total = billAmount + tipAmount
 
         //let totalTwo = (billAmount + tipAmountTwo)
-        
         //let totalThree = (billAmount + tipAmountThree)
 
-        self.totalAmountLabel.text = "$\(total)"
-        //self.totalAmountLabel.text = "$\(totalTwo)"
+        self.totalAmountLabel.text = String (format: "$%.02f", billAmount + tipAmount)
+            
+            
+            //self.totalAmountLabel.text = "$\(total)"
+        
+            
+            //self.totalAmountLabel.text = "$\(totalTwo)"
         //self.totalAmountLabel.text = "$\(totalThree)"
 
-        
-    
     
         default:
             break
